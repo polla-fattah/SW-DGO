@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  tests:
+    name: Tests, provenance and demo freshness
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run test suite
+        run: PYTHONDONTWRITEBYTECODE=1 python -m pytest d2ro/tests/ -q
+
+      # The browser demo executes a snapshot of d2ro/ embedded in
+      # docs/python_bundle.js. Nothing about editing the package refreshes it, so
+      # without this the published demo drifts away from the code it claims to be
+      # running -- silently, and for as long as nobody notices.
+      - name: Web demo must match the Python sources
+        run: python scripts/check_web_bundle.py
+
+      # Every dataset carries a SHA-256 fingerprint of the simulation package that
+      # produced it. If the code has moved on, the analysis refuses to report the
+      # data as current, and so should CI.
+      - name: Every dataset must report ok
+        run: |
+          python analysis/scripts/analyze_results.py
+          python - <<'PY'
+          import io, json, sys
+          r = json.load(io.open("experiments/data/analysis_results.json", encoding="utf-8"))
+          bad = {k: v.get("status") for k, v in r.items()
+                 if isinstance(v, dict) and v.get("status") != "ok"}
+          if bad:
+              print("STALE OR MISSING DATASETS:", bad)
+              sys.exit(1)
+          print(f"all {len(r)} datasets ok")
+          PY

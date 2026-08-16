@@ -1,0 +1,701 @@
+trial_id,configuration,omitted_component,success,travel_time_s,deadlocks,discomfort_integral,shelf_contact_ticks,shelf_contact_events,min_shelf_clearance_m,inter_cart_crowding
+1,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.03,174,4,0.507,0
+1,w/o V2V Mesh Telemetry,W_mesh = 0,1,29.8,0,0.03,106,4,0.507,0
+1,w/o Corridor Reservation,R_lock constraint lifted,1,29.8,0,0.03,106,4,0.507,0
+1,w/o Human Gaussian Proxemics,H_prox = 0,1,100.7,0,6.97,413,25,0.494,0
+1,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.03,246,5,0.511,0
+1,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.03,154,56,0.0,0
+1,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.03,224,82,0.0,0
+2,Full D2RO Framework,None (Complete Equation),1,35.45,0,0.01,57,1,0.51,0
+2,w/o V2V Mesh Telemetry,W_mesh = 0,1,37.5,0,0.01,299,6,0.496,0
+2,w/o Corridor Reservation,R_lock constraint lifted,1,37.5,0,0.01,299,6,0.496,0
+2,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,14.91,465,73,0.382,0
+2,w/o S_trolley cost only,"w_S = 0, controller kept",1,47.45,0,0.01,286,5,0.51,0
+2,w/o safety controller only,"controller off, w_S kept",1,36.8,0,0.01,63,21,0.0,0
+2,w/o safety (full stack),S_trolley = 0 and controller off,1,42.8,0,0.0,279,95,0.0,0
+3,Full D2RO Framework,None (Complete Equation),1,51.7,0,0.01,156,2,0.511,0
+3,w/o V2V Mesh Telemetry,W_mesh = 0,1,31.2,0,0.01,94,3,0.515,0
+3,w/o Corridor Reservation,R_lock constraint lifted,1,31.2,0,0.01,94,3,0.515,0
+3,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.24,188,85,0.516,0
+3,w/o S_trolley cost only,"w_S = 0, controller kept",1,46.2,0,0.01,271,5,0.511,0
+3,w/o safety controller only,"controller off, w_S kept",1,47.3,0,0.0,161,47,0.0,0
+3,w/o safety (full stack),S_trolley = 0 and controller off,1,41.65,0,0.0,252,94,0.0,0
+4,Full D2RO Framework,None (Complete Equation),1,120.7,0,0.04,819,49,0.487,0
+4,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.65,0,0.03,264,15,0.516,0
+4,w/o Corridor Reservation,R_lock constraint lifted,1,34.65,0,0.03,264,15,0.516,0
+4,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.69,185,112,0.516,0
+4,w/o S_trolley cost only,"w_S = 0, controller kept",0,180.0,0,0.05,3128,28,0.511,0
+4,w/o safety controller only,"controller off, w_S kept",1,40.05,0,0.01,249,117,0.0,0
+4,w/o safety (full stack),S_trolley = 0 and controller off,1,39.2,0,0.01,353,91,0.0,0
+5,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.01,131,2,0.511,0
+5,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.85,0,0.0,63,3,0.515,0
+5,w/o Corridor Reservation,R_lock constraint lifted,1,28.85,0,0.0,63,3,0.515,0
+5,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,17.31,367,126,0.368,0
+5,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.01,246,5,0.511,0
+5,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.01,133,35,0.0,0
+5,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.02,224,82,0.0,0
+6,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,154,2,0.511,0
+6,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.3,0,0.01,80,3,0.517,0
+6,w/o Corridor Reservation,R_lock constraint lifted,1,28.3,0,0.01,80,3,0.517,0
+6,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.33,620,84,0.497,0
+6,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+6,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,155,47,0.0,0
+6,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+7,Full D2RO Framework,None (Complete Equation),1,36.5,0,0.01,110,2,0.516,0
+7,w/o V2V Mesh Telemetry,W_mesh = 0,1,31.6,0,0.01,122,10,0.515,0
+7,w/o Corridor Reservation,R_lock constraint lifted,1,31.6,0,0.01,122,10,0.515,0
+7,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.66,122,80,0.372,0
+7,w/o S_trolley cost only,"w_S = 0, controller kept",1,46.6,0,0.01,276,5,0.511,0
+7,w/o safety controller only,"controller off, w_S kept",1,36.1,0,0.01,112,44,0.0,0
+7,w/o safety (full stack),S_trolley = 0 and controller off,1,42.05,0,0.01,261,95,0.0,0
+8,Full D2RO Framework,None (Complete Equation),1,38.1,0,0.05,183,5,0.511,0
+8,w/o V2V Mesh Telemetry,W_mesh = 0,1,49.2,0,0.47,194,15,0.504,0
+8,w/o Corridor Reservation,R_lock constraint lifted,1,44.7,0,0.48,182,7,0.507,0
+8,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.28,122,53,0.502,0
+8,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.95,0,0.01,304,5,0.511,0
+8,w/o safety controller only,"controller off, w_S kept",1,33.5,0,0.05,147,75,0.0,0
+8,w/o safety (full stack),S_trolley = 0 and controller off,1,44.25,0,0.01,310,96,0.0,0
+9,Full D2RO Framework,None (Complete Equation),1,25.65,0,0.09,56,6,0.513,0
+9,w/o V2V Mesh Telemetry,W_mesh = 0,1,53.4,0,0.05,304,16,0.511,0
+9,w/o Corridor Reservation,R_lock constraint lifted,1,53.4,0,0.05,304,16,0.511,0
+9,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.58,356,43,0.34,0
+9,w/o S_trolley cost only,"w_S = 0, controller kept",1,67.5,0,0.04,694,24,0.511,0
+9,w/o safety controller only,"controller off, w_S kept",1,25.75,0,0.09,156,68,0.0,0
+9,w/o safety (full stack),S_trolley = 0 and controller off,1,45.35,0,0.05,183,99,0.0,0
+10,Full D2RO Framework,None (Complete Equation),1,46.15,0,0.02,167,6,0.496,0
+10,w/o V2V Mesh Telemetry,W_mesh = 0,1,38.15,0,0.01,139,5,0.496,0
+10,w/o Corridor Reservation,R_lock constraint lifted,1,38.15,0,0.01,139,5,0.496,0
+10,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,14.68,302,58,0.426,0
+10,w/o S_trolley cost only,"w_S = 0, controller kept",1,46.0,0,0.02,251,5,0.504,0
+10,w/o safety controller only,"controller off, w_S kept",1,55.0,0,0.01,240,70,0.0,0
+10,w/o safety (full stack),S_trolley = 0 and controller off,1,42.85,0,0.02,250,92,0.0,0
+11,Full D2RO Framework,None (Complete Equation),1,50.95,0,0.02,114,1,0.511,0
+11,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.7,0,0.01,326,5,0.496,0
+11,w/o Corridor Reservation,R_lock constraint lifted,1,34.7,0,0.01,326,5,0.496,0
+11,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.98,105,59,0.509,0
+11,w/o S_trolley cost only,"w_S = 0, controller kept",1,50.95,0,0.02,229,4,0.511,0
+11,w/o safety controller only,"controller off, w_S kept",1,47.8,0,0.02,125,27,0.0,0
+11,w/o safety (full stack),S_trolley = 0 and controller off,1,47.8,0,0.02,216,74,0.0,0
+12,Full D2RO Framework,None (Complete Equation),1,64.1,0,0.01,291,9,0.511,0
+12,w/o V2V Mesh Telemetry,W_mesh = 0,1,32.45,0,0.01,109,3,0.51,0
+12,w/o Corridor Reservation,R_lock constraint lifted,1,32.45,0,0.01,109,3,0.51,0
+12,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,18.78,312,101,0.486,0
+12,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.6,0,0.01,300,5,0.511,0
+12,w/o safety controller only,"controller off, w_S kept",1,60.8,0,0.01,400,70,0.0,0
+12,w/o safety (full stack),S_trolley = 0 and controller off,1,43.9,0,0.01,303,95,0.0,0
+13,Full D2RO Framework,None (Complete Equation),1,61.45,0,0.22,253,6,0.51,0
+13,w/o V2V Mesh Telemetry,W_mesh = 0,1,35.4,0,0.02,143,3,0.51,0
+13,w/o Corridor Reservation,R_lock constraint lifted,1,35.4,0,0.02,143,3,0.51,0
+13,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,14.14,727,58,0.331,0
+13,w/o S_trolley cost only,"w_S = 0, controller kept",1,67.15,0,0.27,815,9,0.499,0
+13,w/o safety controller only,"controller off, w_S kept",1,57.35,0,0.22,332,128,0.0,0
+13,w/o safety (full stack),S_trolley = 0 and controller off,1,56.0,0,0.32,353,123,0.0,0
+14,Full D2RO Framework,None (Complete Equation),1,51.45,0,0.01,174,4,0.506,0
+14,w/o V2V Mesh Telemetry,W_mesh = 0,1,38.1,0,0.01,314,7,0.491,0
+14,w/o Corridor Reservation,R_lock constraint lifted,1,38.1,0,0.01,314,7,0.491,0
+14,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,17.43,156,52,0.391,0
+14,w/o S_trolley cost only,"w_S = 0, controller kept",1,51.7,0,0.01,290,5,0.511,0
+14,w/o safety controller only,"controller off, w_S kept",1,53.95,0,0.01,137,45,0.0,0
+14,w/o safety (full stack),S_trolley = 0 and controller off,1,43.25,0,0.01,287,97,0.0,0
+15,Full D2RO Framework,None (Complete Equation),1,42.6,0,0.0,114,1,0.511,0
+15,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.55,0,0.0,52,2,0.517,0
+15,w/o Corridor Reservation,R_lock constraint lifted,1,27.55,0,0.0,52,2,0.517,0
+15,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.32,293,76,0.51,0
+15,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.6,0,0.0,229,4,0.511,0
+15,w/o safety controller only,"controller off, w_S kept",1,39.45,0,0.0,125,27,0.0,0
+15,w/o safety (full stack),S_trolley = 0 and controller off,1,39.45,0,0.0,216,74,0.0,0
+16,Full D2RO Framework,None (Complete Equation),1,80.45,0,0.08,378,6,0.506,0
+16,w/o V2V Mesh Telemetry,W_mesh = 0,1,45.65,0,0.07,266,13,0.495,0
+16,w/o Corridor Reservation,R_lock constraint lifted,1,45.65,0,0.07,266,13,0.495,0
+16,w/o Human Gaussian Proxemics,H_prox = 0,1,155.45,0,13.97,281,38,0.483,0
+16,w/o S_trolley cost only,"w_S = 0, controller kept",1,61.8,0,0.01,416,9,0.504,0
+16,w/o safety controller only,"controller off, w_S kept",1,51.5,0,0.04,308,152,0.0,0
+16,w/o safety (full stack),S_trolley = 0 and controller off,1,46.8,0,0.01,357,119,0.0,0
+17,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,152,2,0.511,0
+17,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.55,0,0.0,38,1,0.517,0
+17,w/o Corridor Reservation,R_lock constraint lifted,1,28.55,0,0.0,38,1,0.517,0
+17,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.99,228,54,0.502,0
+17,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+17,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,151,47,0.0,0
+17,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+18,Full D2RO Framework,None (Complete Equation),1,26.4,0,0.04,103,10,0.511,0
+18,w/o V2V Mesh Telemetry,W_mesh = 0,1,64.25,0,0.04,866,10,0.506,0
+18,w/o Corridor Reservation,R_lock constraint lifted,1,64.25,0,0.04,866,10,0.506,0
+18,w/o Human Gaussian Proxemics,H_prox = 0,1,84.25,0,3.11,148,31,0.512,0
+18,w/o S_trolley cost only,"w_S = 0, controller kept",1,32.55,0,0.04,226,12,0.512,0
+18,w/o safety controller only,"controller off, w_S kept",1,26.45,0,0.04,140,90,0.0,0
+18,w/o safety (full stack),S_trolley = 0 and controller off,1,24.6,0,0.03,267,113,0.0,0
+19,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,114,1,0.511,0
+19,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.55,0,0.0,113,3,0.505,0
+19,w/o Corridor Reservation,R_lock constraint lifted,1,34.55,0,0.0,113,3,0.505,0
+19,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.75,242,73,0.508,0
+19,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,302,3,0.511,0
+19,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,125,27,0.0,0
+19,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,339,77,0.0,0
+20,Full D2RO Framework,None (Complete Equation),1,33.45,0,0.01,194,2,0.511,0
+20,w/o V2V Mesh Telemetry,W_mesh = 0,1,39.95,0,0.01,288,8,0.485,0
+20,w/o Corridor Reservation,R_lock constraint lifted,1,39.95,0,0.01,288,8,0.485,0
+20,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.52,116,31,0.512,0
+20,w/o S_trolley cost only,"w_S = 0, controller kept",1,33.45,0,0.01,309,5,0.511,0
+20,w/o safety controller only,"controller off, w_S kept",1,27.35,0,0.01,66,50,0.0,0
+20,w/o safety (full stack),S_trolley = 0 and controller off,1,25.7,0,0.0,222,118,0.0,0
+21,Full D2RO Framework,None (Complete Equation),1,39.95,0,0.59,311,7,0.504,0
+21,w/o V2V Mesh Telemetry,W_mesh = 0,1,39.5,0,0.57,241,7,0.507,0
+21,w/o Corridor Reservation,R_lock constraint lifted,1,39.5,0,0.57,241,7,0.507,0
+21,w/o Human Gaussian Proxemics,H_prox = 0,1,46.1,0,1.24,268,3,0.509,0
+21,w/o S_trolley cost only,"w_S = 0, controller kept",1,41.65,0,0.75,472,6,0.51,0
+21,w/o safety controller only,"controller off, w_S kept",1,37.35,0,0.49,183,101,0.0,0
+21,w/o safety (full stack),S_trolley = 0 and controller off,1,70.5,0,1.18,416,166,0.0,0
+22,Full D2RO Framework,None (Complete Equation),1,43.0,0,0.01,114,1,0.511,0
+22,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.95,0,0.01,51,2,0.512,0
+22,w/o Corridor Reservation,R_lock constraint lifted,1,27.95,0,0.01,51,2,0.512,0
+22,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.19,80,52,0.5,0
+22,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.01,246,5,0.511,0
+22,w/o safety controller only,"controller off, w_S kept",1,39.85,0,0.01,125,27,0.0,0
+22,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.01,224,82,0.0,0
+23,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.01,114,1,0.511,0
+23,w/o V2V Mesh Telemetry,W_mesh = 0,1,26.8,0,0.01,52,2,0.517,0
+23,w/o Corridor Reservation,R_lock constraint lifted,1,26.8,0,0.01,52,2,0.517,0
+23,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,16.72,170,56,0.505,0
+23,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.01,229,4,0.511,0
+23,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.01,125,27,0.0,0
+23,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.01,216,74,0.0,0
+24,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.01,170,4,0.511,0
+24,w/o V2V Mesh Telemetry,W_mesh = 0,1,29.35,0,0.01,93,4,0.517,0
+24,w/o Corridor Reservation,R_lock constraint lifted,1,29.35,0,0.01,93,4,0.517,0
+24,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.22,184,57,0.513,0
+24,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.01,246,5,0.511,0
+24,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.01,157,55,0.0,0
+24,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.01,224,82,0.0,0
+25,Full D2RO Framework,None (Complete Equation),1,47.5,0,0.02,84,6,0.509,0
+25,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.7,0,0.01,136,3,0.515,0
+25,w/o Corridor Reservation,R_lock constraint lifted,1,34.7,0,0.01,136,3,0.515,0
+25,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,20.29,274,90,0.31,0
+25,w/o S_trolley cost only,"w_S = 0, controller kept",1,49.7,0,0.01,313,5,0.511,0
+25,w/o safety controller only,"controller off, w_S kept",1,48.35,0,0.02,107,39,0.0,0
+25,w/o safety (full stack),S_trolley = 0 and controller off,1,44.95,0,0.01,326,96,0.0,0
+26,Full D2RO Framework,None (Complete Equation),1,44.6,0,0.03,187,7,0.51,0
+26,w/o V2V Mesh Telemetry,W_mesh = 0,1,39.3,0,0.01,425,6,0.496,0
+26,w/o Corridor Reservation,R_lock constraint lifted,1,39.3,0,0.01,425,6,0.496,0
+26,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.98,292,23,0.511,0
+26,w/o S_trolley cost only,"w_S = 0, controller kept",1,47.45,0,0.02,286,5,0.51,0
+26,w/o safety controller only,"controller off, w_S kept",1,39.25,0,0.03,166,80,0.0,0
+26,w/o safety (full stack),S_trolley = 0 and controller off,1,42.8,0,0.02,279,95,0.0,0
+27,Full D2RO Framework,None (Complete Equation),1,36.75,0,0.04,128,4,0.516,0
+27,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.6,0,0.04,123,3,0.515,0
+27,w/o Corridor Reservation,R_lock constraint lifted,1,33.6,0,0.04,123,3,0.515,0
+27,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,14.59,285,38,0.492,0
+27,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.6,0,0.11,300,5,0.511,0
+27,w/o safety controller only,"controller off, w_S kept",1,36.3,0,0.04,154,44,0.0,0
+27,w/o safety (full stack),S_trolley = 0 and controller off,1,43.9,0,0.08,303,95,0.0,0
+28,Full D2RO Framework,None (Complete Equation),1,46.3,0,0.04,51,2,0.519,0
+28,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.75,0,0.01,52,2,0.517,0
+28,w/o Corridor Reservation,R_lock constraint lifted,1,27.75,0,0.01,52,2,0.517,0
+28,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.06,70,60,0.507,0
+28,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.55,0,0.02,225,7,0.512,0
+28,w/o safety controller only,"controller off, w_S kept",1,44.9,0,0.04,23,23,0.174,0
+28,w/o safety (full stack),S_trolley = 0 and controller off,1,45.0,0,0.02,130,86,0.0,0
+29,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,153,3,0.511,0
+29,w/o V2V Mesh Telemetry,W_mesh = 0,1,31.75,0,0.0,91,5,0.511,0
+29,w/o Corridor Reservation,R_lock constraint lifted,1,31.75,0,0.0,91,5,0.511,0
+29,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,16.59,379,54,0.511,0
+29,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+29,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,149,47,0.0,0
+29,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+30,Full D2RO Framework,None (Complete Equation),1,47.6,0,0.04,139,5,0.496,0
+30,w/o V2V Mesh Telemetry,W_mesh = 0,1,55.8,0,0.13,249,10,0.496,0
+30,w/o Corridor Reservation,R_lock constraint lifted,1,55.8,0,0.13,249,10,0.496,0
+30,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.16,172,55,0.5,0
+30,w/o S_trolley cost only,"w_S = 0, controller kept",1,56.05,0,0.02,234,16,0.512,0
+30,w/o safety controller only,"controller off, w_S kept",1,44.65,0,0.04,82,66,0.0,0
+30,w/o safety (full stack),S_trolley = 0 and controller off,1,45.3,0,0.02,181,99,0.0,0
+31,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,160,2,0.511,0
+31,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.05,0,0.0,46,1,0.517,0
+31,w/o Corridor Reservation,R_lock constraint lifted,1,28.05,0,0.0,46,1,0.517,0
+31,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,18.43,151,65,0.512,0
+31,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+31,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,163,49,0.0,0
+31,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+32,Full D2RO Framework,None (Complete Equation),1,47.6,0,0.14,100,7,0.495,0
+32,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.15,0,0.01,80,4,0.505,0
+32,w/o Corridor Reservation,R_lock constraint lifted,1,27.15,0,0.01,80,4,0.505,0
+32,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.09,126,67,0.498,0
+32,w/o S_trolley cost only,"w_S = 0, controller kept",1,61.6,0,0.47,356,8,0.505,0
+32,w/o safety controller only,"controller off, w_S kept",1,46.8,0,0.15,109,69,0.0,0
+32,w/o safety (full stack),S_trolley = 0 and controller off,1,99.4,0,0.71,414,178,0.0,0
+33,Full D2RO Framework,None (Complete Equation),1,43.1,0,0.1,412,5,0.511,0
+33,w/o V2V Mesh Telemetry,W_mesh = 0,1,38.65,0,0.02,162,5,0.511,0
+33,w/o Corridor Reservation,R_lock constraint lifted,1,38.65,0,0.02,162,5,0.511,0
+33,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.48,182,42,0.397,0
+33,w/o S_trolley cost only,"w_S = 0, controller kept",1,43.1,0,0.1,488,6,0.511,0
+33,w/o safety controller only,"controller off, w_S kept",1,44.95,0,0.03,259,69,0.0,0
+33,w/o safety (full stack),S_trolley = 0 and controller off,1,44.95,0,0.03,326,96,0.0,0
+34,Full D2RO Framework,None (Complete Equation),1,45.3,0,0.01,144,2,0.511,0
+34,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.95,0,0.01,51,2,0.512,0
+34,w/o Corridor Reservation,R_lock constraint lifted,1,27.95,0,0.01,51,2,0.512,0
+34,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.85,742,81,0.356,0
+34,w/o S_trolley cost only,"w_S = 0, controller kept",1,45.3,0,0.0,259,5,0.511,0
+34,w/o safety controller only,"controller off, w_S kept",1,40.95,0,0.01,144,46,0.0,0
+34,w/o safety (full stack),S_trolley = 0 and controller off,1,40.95,0,0.0,235,93,0.0,0
+35,Full D2RO Framework,None (Complete Equation),1,33.2,0,0.09,32,12,0.498,0
+35,w/o V2V Mesh Telemetry,W_mesh = 0,1,61.15,0,0.09,644,25,0.507,0
+35,w/o Corridor Reservation,R_lock constraint lifted,1,61.15,0,0.09,644,25,0.507,0
+35,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.4,107,46,0.508,0
+35,w/o S_trolley cost only,"w_S = 0, controller kept",1,81.35,0,0.05,957,28,0.51,0
+35,w/o safety controller only,"controller off, w_S kept",1,21.2,0,0.04,20,20,0.137,17
+35,w/o safety (full stack),S_trolley = 0 and controller off,1,53.4,0,0.18,513,172,0.0,0
+36,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.03,131,2,0.511,0
+36,w/o V2V Mesh Telemetry,W_mesh = 0,1,29.2,0,0.03,63,1,0.517,0
+36,w/o Corridor Reservation,R_lock constraint lifted,1,29.2,0,0.03,63,1,0.517,0
+36,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.37,58,27,0.52,0
+36,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.04,319,4,0.511,0
+36,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.03,133,35,0.0,0
+36,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.04,347,85,0.0,0
+37,Full D2RO Framework,None (Complete Equation),1,35.8,0,0.01,52,1,0.504,0
+37,w/o V2V Mesh Telemetry,W_mesh = 0,1,32.05,0,0.02,104,3,0.504,0
+37,w/o Corridor Reservation,R_lock constraint lifted,1,32.05,0,0.02,104,3,0.504,0
+37,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.33,319,63,0.502,0
+37,w/o S_trolley cost only,"w_S = 0, controller kept",1,47.05,0,0.01,281,5,0.504,0
+37,w/o safety controller only,"controller off, w_S kept",1,37.1,0,0.01,55,23,0.0,0
+37,w/o safety (full stack),S_trolley = 0 and controller off,1,42.5,0,0.01,271,97,0.0,0
+38,Full D2RO Framework,None (Complete Equation),1,45.25,0,0.03,79,6,0.511,0
+38,w/o V2V Mesh Telemetry,W_mesh = 0,1,29.35,0,0.02,69,3,0.515,0
+38,w/o Corridor Reservation,R_lock constraint lifted,1,29.35,0,0.02,69,3,0.515,0
+38,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.87,256,114,0.51,0
+38,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.85,0,0.03,253,5,0.511,0
+38,w/o safety controller only,"controller off, w_S kept",1,40.75,0,0.02,140,42,0.0,0
+38,w/o safety (full stack),S_trolley = 0 and controller off,1,40.75,0,0.03,231,89,0.0,0
+39,Full D2RO Framework,None (Complete Equation),1,48.1,0,0.01,145,6,0.513,0
+39,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.35,0,0.01,148,3,0.517,0
+39,w/o Corridor Reservation,R_lock constraint lifted,1,33.35,0,0.01,148,3,0.517,0
+39,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.92,236,51,0.507,0
+39,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.2,0,0.01,295,5,0.511,0
+39,w/o safety controller only,"controller off, w_S kept",1,47.6,0,0.01,131,61,0.0,0
+39,w/o safety (full stack),S_trolley = 0 and controller off,1,43.55,0,0.0,295,95,0.0,0
+40,Full D2RO Framework,None (Complete Equation),1,46.05,0,0.02,142,5,0.517,0
+40,w/o V2V Mesh Telemetry,W_mesh = 0,1,38.25,0,0.02,432,6,0.496,0
+40,w/o Corridor Reservation,R_lock constraint lifted,1,38.25,0,0.02,432,6,0.496,0
+40,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,20.23,220,67,0.369,0
+40,w/o S_trolley cost only,"w_S = 0, controller kept",1,59.1,0,0.02,414,10,0.5,0
+40,w/o safety controller only,"controller off, w_S kept",1,44.9,0,0.02,160,68,0.0,0
+40,w/o safety (full stack),S_trolley = 0 and controller off,1,44.25,0,0.02,310,96,0.0,0
+41,Full D2RO Framework,None (Complete Equation),1,43.35,0,0.01,153,3,0.511,0
+41,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.45,0,0.0,80,3,0.504,0
+41,w/o Corridor Reservation,R_lock constraint lifted,1,27.45,0,0.0,80,3,0.504,0
+41,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,14.78,181,96,0.511,0
+41,w/o S_trolley cost only,"w_S = 0, controller kept",1,45.2,0,0.01,246,5,0.511,0
+41,w/o safety controller only,"controller off, w_S kept",1,40.2,0,0.01,151,47,0.0,0
+41,w/o safety (full stack),S_trolley = 0 and controller off,1,42.5,0,0.01,224,82,0.0,0
+42,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,114,1,0.511,0
+42,w/o V2V Mesh Telemetry,W_mesh = 0,1,26.9,0,0.05,51,2,0.513,0
+42,w/o Corridor Reservation,R_lock constraint lifted,1,26.9,0,0.05,51,2,0.513,0
+42,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,17.31,530,85,0.5,0
+42,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+42,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,125,27,0.0,0
+42,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+43,Full D2RO Framework,None (Complete Equation),1,37.95,0,0.02,52,2,0.507,0
+43,w/o V2V Mesh Telemetry,W_mesh = 0,1,37.35,0,0.0,147,3,0.506,0
+43,w/o Corridor Reservation,R_lock constraint lifted,1,37.35,0,0.0,147,3,0.506,0
+43,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.87,291,50,0.511,0
+43,w/o S_trolley cost only,"w_S = 0, controller kept",1,41.7,0,0.02,239,4,0.511,0
+43,w/o safety controller only,"controller off, w_S kept",1,36.3,0,0.02,25,25,0.134,0
+43,w/o safety (full stack),S_trolley = 0 and controller off,1,38.55,0,0.02,236,72,0.0,0
+44,Full D2RO Framework,None (Complete Equation),1,42.8,0,0.0,158,2,0.511,0
+44,w/o V2V Mesh Telemetry,W_mesh = 0,1,46.65,0,0.03,250,3,0.511,0
+44,w/o Corridor Reservation,R_lock constraint lifted,1,46.65,0,0.03,250,3,0.511,0
+44,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.99,109,44,0.517,0
+44,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.01,246,5,0.511,0
+44,w/o safety controller only,"controller off, w_S kept",1,39.65,0,0.0,161,47,0.0,0
+44,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.01,224,82,0.0,0
+45,Full D2RO Framework,None (Complete Equation),1,77.4,0,0.12,802,39,0.511,0
+45,w/o V2V Mesh Telemetry,W_mesh = 0,1,60.7,0,0.07,437,30,0.499,0
+45,w/o Corridor Reservation,R_lock constraint lifted,1,60.7,0,0.07,437,30,0.499,0
+45,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.32,316,71,0.488,0
+45,w/o S_trolley cost only,"w_S = 0, controller kept",1,129.2,0,0.16,1572,37,0.51,0
+45,w/o safety controller only,"controller off, w_S kept",1,55.4,0,0.39,284,132,0.0,0
+45,w/o safety (full stack),S_trolley = 0 and controller off,1,70.95,0,1.0,219,115,0.0,0
+46,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.0,170,4,0.511,0
+46,w/o V2V Mesh Telemetry,W_mesh = 0,1,152.1,0,4.13,1158,103,0.314,0
+46,w/o Corridor Reservation,R_lock constraint lifted,1,125.5,0,3.61,742,120,0.314,0
+46,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.48,663,122,0.334,0
+46,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+46,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.0,157,55,0.0,0
+46,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+47,Full D2RO Framework,None (Complete Equation),1,36.4,0,0.02,90,3,0.507,0
+47,w/o V2V Mesh Telemetry,W_mesh = 0,1,31.25,0,0.0,78,3,0.496,0
+47,w/o Corridor Reservation,R_lock constraint lifted,1,31.25,0,0.0,78,3,0.496,0
+47,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.9,316,88,0.506,0
+47,w/o S_trolley cost only,"w_S = 0, controller kept",1,40.15,0,0.0,240,4,0.511,0
+47,w/o safety controller only,"controller off, w_S kept",1,34.75,0,0.01,51,45,0.0,0
+47,w/o safety (full stack),S_trolley = 0 and controller off,1,37.0,0,0.0,238,74,0.0,0
+48,Full D2RO Framework,None (Complete Equation),1,59.6,0,0.03,250,9,0.503,0
+48,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.3,0,0.02,131,3,0.515,0
+48,w/o Corridor Reservation,R_lock constraint lifted,1,34.3,0,0.02,131,3,0.515,0
+48,w/o Human Gaussian Proxemics,H_prox = 0,1,155.75,0,13.61,95,39,0.327,0
+48,w/o S_trolley cost only,"w_S = 0, controller kept",1,58.35,0,0.01,407,10,0.511,0
+48,w/o safety controller only,"controller off, w_S kept",1,55.45,0,0.04,332,78,0.0,0
+48,w/o safety (full stack),S_trolley = 0 and controller off,1,44.6,0,0.01,318,96,0.0,0
+49,Full D2RO Framework,None (Complete Equation),1,45.9,0,0.0,150,4,0.51,0
+49,w/o V2V Mesh Telemetry,W_mesh = 0,1,32.5,0,0.01,149,5,0.51,0
+49,w/o Corridor Reservation,R_lock constraint lifted,1,32.5,0,0.01,149,5,0.51,0
+49,w/o Human Gaussian Proxemics,H_prox = 0,1,45.15,0,0.94,83,11,0.504,0
+49,w/o S_trolley cost only,"w_S = 0, controller kept",1,47.45,0,0.0,286,5,0.51,0
+49,w/o safety controller only,"controller off, w_S kept",1,45.85,0,0.0,121,69,0.0,0
+49,w/o safety (full stack),S_trolley = 0 and controller off,1,42.8,0,0.0,279,95,0.0,0
+50,Full D2RO Framework,None (Complete Equation),1,35.4,0,0.02,60,3,0.517,0
+50,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.95,0,0.01,127,3,0.515,0
+50,w/o Corridor Reservation,R_lock constraint lifted,1,33.95,0,0.01,127,3,0.515,0
+50,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.06,204,79,0.504,0
+50,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.95,0,0.01,304,5,0.511,0
+50,w/o safety controller only,"controller off, w_S kept",1,35.7,0,0.02,99,27,0.0,0
+50,w/o safety (full stack),S_trolley = 0 and controller off,1,44.25,0,0.01,310,96,0.0,0
+51,Full D2RO Framework,None (Complete Equation),1,43.0,0,0.0,114,1,0.511,0
+51,w/o V2V Mesh Telemetry,W_mesh = 0,1,62.1,0,0.5,344,18,0.494,0
+51,w/o Corridor Reservation,R_lock constraint lifted,1,46.2,0,0.47,184,13,0.487,0
+51,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.61,288,95,0.489,0
+51,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+51,w/o safety controller only,"controller off, w_S kept",1,39.85,0,0.0,125,27,0.0,0
+51,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+52,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.0,131,2,0.511,0
+52,w/o V2V Mesh Telemetry,W_mesh = 0,1,39.2,0,0.02,199,16,0.512,0
+52,w/o Corridor Reservation,R_lock constraint lifted,1,39.2,0,0.02,199,16,0.512,0
+52,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,14.27,80,30,0.32,0
+52,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+52,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.0,133,35,0.0,0
+52,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+53,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.01,155,2,0.511,0
+53,w/o V2V Mesh Telemetry,W_mesh = 0,1,45.2,0,0.01,369,5,0.489,0
+53,w/o Corridor Reservation,R_lock constraint lifted,1,45.2,0,0.01,369,5,0.489,0
+53,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.54,371,88,0.493,0
+53,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.02,229,4,0.511,0
+53,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.01,155,47,0.0,0
+53,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.02,216,74,0.0,0
+54,Full D2RO Framework,None (Complete Equation),1,51.4,0,0.02,154,5,0.497,0
+54,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.9,0,0.01,93,4,0.511,0
+54,w/o Corridor Reservation,R_lock constraint lifted,1,28.9,0,0.01,93,4,0.511,0
+54,w/o Human Gaussian Proxemics,H_prox = 0,1,72.2,0,1.83,349,10,0.492,0
+54,w/o S_trolley cost only,"w_S = 0, controller kept",1,47.45,0,0.02,286,5,0.51,0
+54,w/o safety controller only,"controller off, w_S kept",1,49.45,0,0.02,139,91,0.0,0
+54,w/o safety (full stack),S_trolley = 0 and controller off,1,42.8,0,0.02,279,95,0.0,0
+55,Full D2RO Framework,None (Complete Equation),1,65.25,0,0.04,212,3,0.511,0
+55,w/o V2V Mesh Telemetry,W_mesh = 0,1,32.65,0,0.01,140,7,0.511,0
+55,w/o Corridor Reservation,R_lock constraint lifted,1,32.65,0,0.01,140,7,0.511,0
+55,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.94,123,32,0.516,0
+55,w/o S_trolley cost only,"w_S = 0, controller kept",1,50.95,0,0.03,285,5,0.511,0
+55,w/o safety controller only,"controller off, w_S kept",1,46.4,0,0.03,218,70,0.0,0
+55,w/o safety (full stack),S_trolley = 0 and controller off,1,46.4,0,0.03,277,97,0.0,0
+56,Full D2RO Framework,None (Complete Equation),1,21.15,0,0.01,102,3,0.516,0
+56,w/o V2V Mesh Telemetry,W_mesh = 0,1,22.25,0,0.01,115,9,0.516,0
+56,w/o Corridor Reservation,R_lock constraint lifted,1,22.25,0,0.01,115,9,0.516,0
+56,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.43,290,111,0.512,0
+56,w/o S_trolley cost only,"w_S = 0, controller kept",1,21.15,0,0.01,178,4,0.512,0
+56,w/o safety controller only,"controller off, w_S kept",1,19.55,0,0.01,90,40,0.0,0
+56,w/o safety (full stack),S_trolley = 0 and controller off,1,19.55,0,0.01,157,67,0.0,0
+57,Full D2RO Framework,None (Complete Equation),1,36.7,0,0.0,52,2,0.507,0
+57,w/o V2V Mesh Telemetry,W_mesh = 0,1,31.5,0,0.0,52,2,0.517,0
+57,w/o Corridor Reservation,R_lock constraint lifted,1,31.5,0,0.0,52,2,0.517,0
+57,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.49,293,47,0.382,0
+57,w/o S_trolley cost only,"w_S = 0, controller kept",1,40.45,0,0.0,240,4,0.511,0
+57,w/o safety controller only,"controller off, w_S kept",1,35.05,0,0.0,25,25,0.134,0
+57,w/o safety (full stack),S_trolley = 0 and controller off,1,37.3,0,0.0,238,74,0.0,0
+58,Full D2RO Framework,None (Complete Equation),1,52.25,0,0.01,202,3,0.511,0
+58,w/o V2V Mesh Telemetry,W_mesh = 0,1,51.35,0,0.11,276,9,0.51,0
+58,w/o Corridor Reservation,R_lock constraint lifted,1,51.35,0,0.11,276,9,0.51,0
+58,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.77,217,81,0.503,0
+58,w/o S_trolley cost only,"w_S = 0, controller kept",1,52.25,0,0.01,252,5,0.511,0
+58,w/o safety controller only,"controller off, w_S kept",1,48.2,0,0.01,208,62,0.0,0
+58,w/o safety (full stack),S_trolley = 0 and controller off,1,48.2,0,0.01,229,87,0.0,0
+59,Full D2RO Framework,None (Complete Equation),1,84.35,0,0.19,1017,21,0.511,0
+59,w/o V2V Mesh Telemetry,W_mesh = 0,1,38.15,0,0.01,202,4,0.496,0
+59,w/o Corridor Reservation,R_lock constraint lifted,1,38.15,0,0.01,202,4,0.496,0
+59,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.11,81,52,0.507,0
+59,w/o S_trolley cost only,"w_S = 0, controller kept",1,84.35,0,0.19,1088,25,0.511,0
+59,w/o safety controller only,"controller off, w_S kept",1,38.7,0,0.01,155,47,0.0,0
+59,w/o safety (full stack),S_trolley = 0 and controller off,1,38.7,0,0.01,216,74,0.0,0
+60,Full D2RO Framework,None (Complete Equation),1,70.2,0,1.09,228,28,0.503,0
+60,w/o V2V Mesh Telemetry,W_mesh = 0,1,40.0,0,0.09,182,17,0.498,0
+60,w/o Corridor Reservation,R_lock constraint lifted,1,40.0,0,0.09,182,17,0.498,0
+60,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,17.35,303,50,0.5,0
+60,w/o S_trolley cost only,"w_S = 0, controller kept",1,77.6,0,0.93,356,9,0.503,0
+60,w/o safety controller only,"controller off, w_S kept",1,43.25,0,0.02,110,66,0.0,0
+60,w/o safety (full stack),S_trolley = 0 and controller off,1,43.25,0,0.02,169,93,0.0,0
+61,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.0,131,2,0.511,0
+61,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.55,0,0.01,52,2,0.517,0
+61,w/o Corridor Reservation,R_lock constraint lifted,1,27.55,0,0.01,52,2,0.517,0
+61,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.31,321,26,0.511,0
+61,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+61,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.0,133,35,0.0,0
+61,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+62,Full D2RO Framework,None (Complete Equation),1,95.5,0,0.3,990,21,0.486,0
+62,w/o V2V Mesh Telemetry,W_mesh = 0,1,46.95,0,0.01,279,9,0.511,0
+62,w/o Corridor Reservation,R_lock constraint lifted,1,46.95,0,0.01,279,9,0.511,0
+62,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.81,54,33,0.497,0
+62,w/o S_trolley cost only,"w_S = 0, controller kept",1,71.0,0,0.02,618,8,0.509,0
+62,w/o safety controller only,"controller off, w_S kept",1,74.3,0,0.3,462,244,0.0,0
+62,w/o safety (full stack),S_trolley = 0 and controller off,1,44.95,0,0.01,326,96,0.0,0
+63,Full D2RO Framework,None (Complete Equation),1,42.8,0,0.0,114,1,0.511,0
+63,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.75,0,0.0,52,2,0.517,0
+63,w/o Corridor Reservation,R_lock constraint lifted,1,27.75,0,0.0,52,2,0.517,0
+63,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.67,50,32,0.494,0
+63,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+63,w/o safety controller only,"controller off, w_S kept",1,39.65,0,0.0,125,27,0.0,0
+63,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+64,Full D2RO Framework,None (Complete Equation),1,45.5,0,0.06,480,7,0.491,0
+64,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.7,0,0.03,245,12,0.51,0
+64,w/o Corridor Reservation,R_lock constraint lifted,1,33.7,0,0.03,245,12,0.51,0
+64,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.6,378,70,0.389,0
+64,w/o S_trolley cost only,"w_S = 0, controller kept",1,92.3,0,0.03,1139,38,0.51,0
+64,w/o safety controller only,"controller off, w_S kept",1,42.1,0,0.03,334,104,0.0,0
+64,w/o safety (full stack),S_trolley = 0 and controller off,1,42.1,0,0.03,318,106,0.0,0
+65,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.01,179,2,0.511,0
+65,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.35,0,0.01,186,12,0.491,0
+65,w/o Corridor Reservation,R_lock constraint lifted,1,34.35,0,0.01,186,12,0.491,0
+65,w/o Human Gaussian Proxemics,H_prox = 0,1,148.65,0,10.98,153,68,0.384,0
+65,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.01,229,4,0.511,0
+65,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.01,195,49,0.0,0
+65,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.01,216,74,0.0,0
+66,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,114,1,0.511,0
+66,w/o V2V Mesh Telemetry,W_mesh = 0,1,30.35,0,0.0,52,2,0.517,0
+66,w/o Corridor Reservation,R_lock constraint lifted,1,30.35,0,0.0,52,2,0.517,0
+66,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.08,276,39,0.477,0
+66,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+66,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,125,27,0.0,0
+66,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+67,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,152,2,0.5,0
+67,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.65,0,0.0,90,3,0.5,0
+67,w/o Corridor Reservation,R_lock constraint lifted,1,27.65,0,0.0,90,3,0.5,0
+67,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.72,143,71,0.511,0
+67,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+67,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,151,49,0.0,0
+67,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+68,Full D2RO Framework,None (Complete Equation),1,38.6,0,0.22,419,19,0.5,0
+68,w/o V2V Mesh Telemetry,W_mesh = 0,1,53.05,0,1.11,660,44,0.496,0
+68,w/o Corridor Reservation,R_lock constraint lifted,1,62.8,0,1.09,702,50,0.496,0
+68,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.89,143,34,0.486,0
+68,w/o S_trolley cost only,"w_S = 0, controller kept",1,166.5,0,1.56,2673,57,0.5,0
+68,w/o safety controller only,"controller off, w_S kept",1,33.5,0,0.17,491,159,0.0,0
+68,w/o safety (full stack),S_trolley = 0 and controller off,1,32.8,0,0.11,475,167,0.0,0
+69,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.0,131,2,0.511,0
+69,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.95,0,0.0,51,2,0.512,0
+69,w/o Corridor Reservation,R_lock constraint lifted,1,27.95,0,0.0,51,2,0.512,0
+69,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.25,72,40,0.511,0
+69,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+69,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.0,133,35,0.0,0
+69,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+70,Full D2RO Framework,None (Complete Equation),1,50.35,0,0.02,217,7,0.511,0
+70,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.7,0,0.02,174,4,0.515,0
+70,w/o Corridor Reservation,R_lock constraint lifted,1,34.7,0,0.02,174,4,0.515,0
+70,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.38,117,57,0.511,0
+70,w/o S_trolley cost only,"w_S = 0, controller kept",1,49.7,0,0.02,313,5,0.511,0
+70,w/o safety controller only,"controller off, w_S kept",1,47.15,0,0.01,261,73,0.0,0
+70,w/o safety (full stack),S_trolley = 0 and controller off,1,44.95,0,0.01,326,96,0.0,0
+71,Full D2RO Framework,None (Complete Equation),1,42.8,0,0.0,154,2,0.511,0
+71,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.8,0,0.0,80,3,0.496,0
+71,w/o Corridor Reservation,R_lock constraint lifted,1,27.8,0,0.0,80,3,0.496,0
+71,w/o Human Gaussian Proxemics,H_prox = 0,1,113.05,0,5.41,137,30,0.533,0
+71,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+71,w/o safety controller only,"controller off, w_S kept",1,39.65,0,0.0,155,47,0.0,0
+71,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+72,Full D2RO Framework,None (Complete Equation),1,44.45,0,0.06,326,13,0.489,0
+72,w/o V2V Mesh Telemetry,W_mesh = 0,1,54.55,0,0.04,224,9,0.506,0
+72,w/o Corridor Reservation,R_lock constraint lifted,1,54.55,0,0.04,224,9,0.506,0
+72,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.23,211,102,0.51,0
+72,w/o S_trolley cost only,"w_S = 0, controller kept",1,49.3,0,0.02,308,5,0.511,0
+72,w/o safety controller only,"controller off, w_S kept",1,57.05,0,0.02,442,144,0.0,0
+72,w/o safety (full stack),S_trolley = 0 and controller off,1,44.6,0,0.01,318,96,0.0,0
+73,Full D2RO Framework,None (Complete Equation),1,54.3,0,0.01,189,4,0.515,0
+73,w/o V2V Mesh Telemetry,W_mesh = 0,1,31.2,0,0.02,125,4,0.517,0
+73,w/o Corridor Reservation,R_lock constraint lifted,1,31.2,0,0.02,125,4,0.517,0
+73,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,16.13,390,93,0.475,0
+73,w/o S_trolley cost only,"w_S = 0, controller kept",1,46.2,0,0.01,271,5,0.511,0
+73,w/o safety controller only,"controller off, w_S kept",1,52.45,0,0.01,72,40,0.0,0
+73,w/o safety (full stack),S_trolley = 0 and controller off,1,41.65,0,0.01,252,94,0.0,0
+74,Full D2RO Framework,None (Complete Equation),1,38.05,0,0.0,39,2,0.517,0
+74,w/o V2V Mesh Telemetry,W_mesh = 0,1,43.95,0,0.0,451,9,0.499,0
+74,w/o Corridor Reservation,R_lock constraint lifted,1,43.95,0,0.0,451,9,0.499,0
+74,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.33,299,58,0.505,0
+74,w/o S_trolley cost only,"w_S = 0, controller kept",1,40.45,0,0.0,240,4,0.511,0
+74,w/o safety controller only,"controller off, w_S kept",1,38.05,0,0.0,24,20,0.0,0
+74,w/o safety (full stack),S_trolley = 0 and controller off,1,37.3,0,0.0,238,74,0.0,0
+75,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.0,170,4,0.511,0
+75,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.75,0,0.0,80,3,0.517,0
+75,w/o Corridor Reservation,R_lock constraint lifted,1,27.75,0,0.0,80,3,0.517,0
+75,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.23,329,105,0.504,0
+75,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+75,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.0,157,55,0.0,0
+75,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+76,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.04,131,2,0.511,0
+76,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.85,0,0.0,63,3,0.515,0
+76,w/o Corridor Reservation,R_lock constraint lifted,1,28.85,0,0.0,63,3,0.515,0
+76,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.27,198,56,0.511,0
+76,w/o S_trolley cost only,"w_S = 0, controller kept",1,52.95,0,0.03,269,9,0.511,0
+76,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.01,133,35,0.0,0
+76,w/o safety (full stack),S_trolley = 0 and controller off,1,52.4,0,0.02,268,114,0.0,0
+77,Full D2RO Framework,None (Complete Equation),1,47.15,0,0.01,257,13,0.507,0
+77,w/o V2V Mesh Telemetry,W_mesh = 0,1,37.2,0,0.01,260,10,0.515,0
+77,w/o Corridor Reservation,R_lock constraint lifted,1,37.2,0,0.01,260,10,0.515,0
+77,w/o Human Gaussian Proxemics,H_prox = 0,1,165.2,0,16.96,792,77,0.314,0
+77,w/o S_trolley cost only,"w_S = 0, controller kept",1,56.3,0,0.01,366,10,0.5,0
+77,w/o safety controller only,"controller off, w_S kept",1,46.8,0,0.01,149,65,0.0,0
+77,w/o safety (full stack),S_trolley = 0 and controller off,1,44.25,0,0.01,310,96,0.0,0
+78,Full D2RO Framework,None (Complete Equation),1,57.95,0,0.01,172,5,0.511,0
+78,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.6,0,0.01,123,3,0.515,0
+78,w/o Corridor Reservation,R_lock constraint lifted,1,33.6,0,0.01,123,3,0.515,0
+78,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.68,87,24,0.517,0
+78,w/o S_trolley cost only,"w_S = 0, controller kept",1,52.55,0,0.01,309,10,0.499,0
+78,w/o safety controller only,"controller off, w_S kept",1,55.9,0,0.01,219,55,0.0,0
+78,w/o safety (full stack),S_trolley = 0 and controller off,1,43.9,0,0.01,303,95,0.0,0
+79,Full D2RO Framework,None (Complete Equation),1,44.35,0,0.0,171,3,0.511,0
+79,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.25,0,0.01,92,3,0.517,0
+79,w/o Corridor Reservation,R_lock constraint lifted,1,28.25,0,0.01,92,3,0.517,0
+79,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.14,336,61,0.496,0
+79,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+79,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.0,163,55,0.0,0
+79,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+80,Full D2RO Framework,None (Complete Equation),1,43.25,0,0.0,114,1,0.511,0
+80,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.25,0,0.01,52,2,0.517,0
+80,w/o Corridor Reservation,R_lock constraint lifted,1,28.25,0,0.01,52,2,0.517,0
+80,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.59,70,53,0.511,0
+80,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+80,w/o safety controller only,"controller off, w_S kept",1,40.1,0,0.0,125,27,0.0,0
+80,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+81,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,114,1,0.511,0
+81,w/o V2V Mesh Telemetry,W_mesh = 0,1,57.8,0,0.04,210,2,0.509,0
+81,w/o Corridor Reservation,R_lock constraint lifted,1,57.8,0,0.04,210,2,0.509,0
+81,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.83,229,23,0.511,0
+81,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+81,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,125,27,0.0,0
+81,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+82,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,152,2,0.511,0
+82,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.55,0,0.01,38,1,0.517,0
+82,w/o Corridor Reservation,R_lock constraint lifted,1,28.55,0,0.01,38,1,0.517,0
+82,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,16.78,136,78,0.497,0
+82,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+82,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,151,47,0.0,0
+82,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+83,Full D2RO Framework,None (Complete Equation),1,71.3,0,0.02,260,6,0.511,0
+83,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.6,0,0.02,123,3,0.515,0
+83,w/o Corridor Reservation,R_lock constraint lifted,1,33.6,0,0.02,123,3,0.515,0
+83,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.89,86,37,0.505,0
+83,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.6,0,0.01,300,5,0.511,0
+83,w/o safety controller only,"controller off, w_S kept",1,57.3,0,0.01,216,52,0.0,0
+83,w/o safety (full stack),S_trolley = 0 and controller off,1,43.9,0,0.01,303,95,0.0,0
+84,Full D2RO Framework,None (Complete Equation),1,50.75,0,0.01,112,5,0.507,0
+84,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.95,0,0.01,127,3,0.515,0
+84,w/o Corridor Reservation,R_lock constraint lifted,1,33.95,0,0.01,127,3,0.515,0
+84,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.87,303,127,0.509,0
+84,w/o S_trolley cost only,"w_S = 0, controller kept",1,48.95,0,0.01,304,5,0.511,0
+84,w/o safety controller only,"controller off, w_S kept",1,49.4,0,0.01,124,52,0.0,0
+84,w/o safety (full stack),S_trolley = 0 and controller off,1,44.25,0,0.01,310,96,0.0,0
+85,Full D2RO Framework,None (Complete Equation),1,67.05,0,0.01,252,8,0.507,0
+85,w/o V2V Mesh Telemetry,W_mesh = 0,1,29.35,0,0.01,69,3,0.515,0
+85,w/o Corridor Reservation,R_lock constraint lifted,1,29.35,0,0.01,69,3,0.515,0
+85,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,14.21,434,46,0.502,0
+85,w/o S_trolley cost only,"w_S = 0, controller kept",1,66.1,0,0.01,451,14,0.506,0
+85,w/o safety controller only,"controller off, w_S kept",1,40.5,0,0.01,133,35,0.0,0
+85,w/o safety (full stack),S_trolley = 0 and controller off,1,46.95,0,0.01,325,113,0.0,0
+86,Full D2RO Framework,None (Complete Equation),1,67.4,0,0.02,357,9,0.507,0
+86,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.3,0,0.02,131,3,0.515,0
+86,w/o Corridor Reservation,R_lock constraint lifted,1,34.3,0,0.02,131,3,0.515,0
+86,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.43,218,61,0.513,0
+86,w/o S_trolley cost only,"w_S = 0, controller kept",1,49.3,0,0.01,308,5,0.511,0
+86,w/o safety controller only,"controller off, w_S kept",1,37.95,0,0.02,167,49,0.0,0
+86,w/o safety (full stack),S_trolley = 0 and controller off,1,44.6,0,0.01,318,96,0.0,0
+87,Full D2RO Framework,None (Complete Equation),1,49.3,0,0.01,193,2,0.511,0
+87,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.3,0,0.01,131,3,0.515,0
+87,w/o Corridor Reservation,R_lock constraint lifted,1,34.3,0,0.01,131,3,0.515,0
+87,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,18.07,247,47,0.497,0
+87,w/o S_trolley cost only,"w_S = 0, controller kept",1,49.3,0,0.01,308,5,0.511,0
+87,w/o safety controller only,"controller off, w_S kept",1,44.6,0,0.01,227,49,0.0,0
+87,w/o safety (full stack),S_trolley = 0 and controller off,1,44.6,0,0.01,318,96,0.0,0
+88,Full D2RO Framework,None (Complete Equation),1,48.15,0,0.02,121,3,0.517,0
+88,w/o V2V Mesh Telemetry,W_mesh = 0,1,47.0,0,0.27,381,13,0.511,0
+88,w/o Corridor Reservation,R_lock constraint lifted,1,47.0,0,0.27,381,13,0.511,0
+88,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.95,99,52,0.512,0
+88,w/o S_trolley cost only,"w_S = 0, controller kept",1,55.85,0,0.02,295,11,0.511,0
+88,w/o safety controller only,"controller off, w_S kept",1,94.75,0,0.35,380,168,0.0,0
+88,w/o safety (full stack),S_trolley = 0 and controller off,1,51.55,0,0.02,364,132,0.0,0
+89,Full D2RO Framework,None (Complete Equation),1,26.8,0,0.05,233,13,0.516,0
+89,w/o V2V Mesh Telemetry,W_mesh = 0,1,77.4,0,0.05,647,10,0.5,0
+89,w/o Corridor Reservation,R_lock constraint lifted,1,77.4,0,0.05,647,10,0.5,0
+89,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.97,184,17,0.511,0
+89,w/o S_trolley cost only,"w_S = 0, controller kept",1,36.75,0,0.2,540,19,0.51,0
+89,w/o safety controller only,"controller off, w_S kept",1,24.45,0,0.05,332,142,0.0,0
+89,w/o safety (full stack),S_trolley = 0 and controller off,1,39.6,0,0.41,802,232,0.0,0
+90,Full D2RO Framework,None (Complete Equation),1,51.2,0,0.0,185,6,0.511,0
+90,w/o V2V Mesh Telemetry,W_mesh = 0,1,30.4,0,0.01,120,4,0.515,0
+90,w/o Corridor Reservation,R_lock constraint lifted,1,30.4,0,0.01,120,4,0.515,0
+90,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,17.29,127,89,0.38,0
+90,w/o S_trolley cost only,"w_S = 0, controller kept",1,45.3,0,0.0,259,5,0.511,0
+90,w/o safety controller only,"controller off, w_S kept",1,40.95,0,0.0,170,66,0.0,0
+90,w/o safety (full stack),S_trolley = 0 and controller off,1,40.95,0,0.0,235,93,0.0,0
+91,Full D2RO Framework,None (Complete Equation),1,42.2,0,0.0,114,1,0.511,0
+91,w/o V2V Mesh Telemetry,W_mesh = 0,1,28.2,0,0.0,52,2,0.517,0
+91,w/o Corridor Reservation,R_lock constraint lifted,1,28.2,0,0.0,52,2,0.517,0
+91,w/o Human Gaussian Proxemics,H_prox = 0,1,98.2,0,4.35,374,20,0.489,0
+91,w/o S_trolley cost only,"w_S = 0, controller kept",1,42.2,0,0.0,229,4,0.511,0
+91,w/o safety controller only,"controller off, w_S kept",1,39.05,0,0.0,125,27,0.0,0
+91,w/o safety (full stack),S_trolley = 0 and controller off,1,39.05,0,0.0,216,74,0.0,0
+92,Full D2RO Framework,None (Complete Equation),1,35.05,0,0.03,190,8,0.517,0
+92,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.35,0,0.01,236,7,0.517,0
+92,w/o Corridor Reservation,R_lock constraint lifted,1,33.35,0,0.01,236,7,0.517,0
+92,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.21,272,103,0.517,0
+92,w/o S_trolley cost only,"w_S = 0, controller kept",1,35.55,0,0.03,244,5,0.512,0
+92,w/o safety controller only,"controller off, w_S kept",1,36.2,0,0.04,237,85,0.0,0
+92,w/o safety (full stack),S_trolley = 0 and controller off,1,43.55,0,0.01,295,95,0.0,0
+93,Full D2RO Framework,None (Complete Equation),1,31.45,0,0.04,43,2,0.507,0
+93,w/o V2V Mesh Telemetry,W_mesh = 0,1,33.85,0,0.05,43,2,0.507,0
+93,w/o Corridor Reservation,R_lock constraint lifted,1,33.85,0,0.05,43,2,0.507,0
+93,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.69,150,92,0.512,0
+93,w/o S_trolley cost only,"w_S = 0, controller kept",1,31.4,0,0.04,178,4,0.512,0
+93,w/o safety controller only,"controller off, w_S kept",1,31.45,0,0.04,21,21,0.023,0
+93,w/o safety (full stack),S_trolley = 0 and controller off,1,29.8,0,0.04,158,68,0.0,0
+94,Full D2RO Framework,None (Complete Equation),1,47.7,0,0.11,122,5,0.507,0
+94,w/o V2V Mesh Telemetry,W_mesh = 0,1,108.0,0,0.22,567,47,0.496,0
+94,w/o Corridor Reservation,R_lock constraint lifted,1,108.0,0,0.22,567,47,0.496,0
+94,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.87,154,67,0.499,0
+94,w/o S_trolley cost only,"w_S = 0, controller kept",1,112.8,0,0.3,1598,35,0.511,0
+94,w/o safety controller only,"controller off, w_S kept",1,45.45,0,0.11,120,52,0.0,0
+94,w/o safety (full stack),S_trolley = 0 and controller off,1,48.85,0,0.11,266,114,0.0,0
+95,Full D2RO Framework,None (Complete Equation),1,53.05,0,0.01,158,2,0.511,0
+95,w/o V2V Mesh Telemetry,W_mesh = 0,1,26.4,0,0.0,84,3,0.492,0
+95,w/o Corridor Reservation,R_lock constraint lifted,1,26.4,0,0.0,84,3,0.492,0
+95,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.79,42,25,0.522,0
+95,w/o S_trolley cost only,"w_S = 0, controller kept",1,52.05,0,0.0,229,4,0.511,0
+95,w/o safety controller only,"controller off, w_S kept",1,49.9,0,0.01,161,47,0.0,0
+95,w/o safety (full stack),S_trolley = 0 and controller off,1,48.9,0,0.0,216,74,0.0,0
+96,Full D2RO Framework,None (Complete Equation),1,40.8,0,0.02,66,3,0.518,0
+96,w/o V2V Mesh Telemetry,W_mesh = 0,1,34.3,0,0.01,131,3,0.515,0
+96,w/o Corridor Reservation,R_lock constraint lifted,1,34.3,0,0.01,131,3,0.515,0
+96,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,10.83,524,55,0.51,0
+96,w/o S_trolley cost only,"w_S = 0, controller kept",1,53.05,0,0.06,245,6,0.498,0
+96,w/o safety controller only,"controller off, w_S kept",1,41.6,0,0.03,100,26,0.0,0
+96,w/o safety (full stack),S_trolley = 0 and controller off,1,52.0,0,0.05,258,118,0.0,0
+97,Full D2RO Framework,None (Complete Equation),1,59.25,0,0.07,359,13,0.506,0
+97,w/o V2V Mesh Telemetry,W_mesh = 0,1,43.45,0,0.0,142,12,0.512,0
+97,w/o Corridor Reservation,R_lock constraint lifted,1,43.45,0,0.0,142,12,0.512,0
+97,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,12.63,318,50,0.508,0
+97,w/o S_trolley cost only,"w_S = 0, controller kept",1,56.95,0,0.0,464,14,0.499,0
+97,w/o safety controller only,"controller off, w_S kept",1,28.05,0,0.01,200,72,0.0,0
+97,w/o safety (full stack),S_trolley = 0 and controller off,1,29.9,0,0.02,340,118,0.0,0
+98,Full D2RO Framework,None (Complete Equation),1,42.6,0,0.0,154,2,0.511,0
+98,w/o V2V Mesh Telemetry,W_mesh = 0,1,27.55,0,0.0,92,3,0.517,0
+98,w/o Corridor Reservation,R_lock constraint lifted,1,27.55,0,0.0,92,3,0.517,0
+98,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,15.69,168,27,0.514,0
+98,w/o S_trolley cost only,"w_S = 0, controller kept",1,44.35,0,0.0,246,5,0.511,0
+98,w/o safety controller only,"controller off, w_S kept",1,39.45,0,0.0,155,47,0.0,0
+98,w/o safety (full stack),S_trolley = 0 and controller off,1,40.5,0,0.0,224,82,0.0,0
+99,Full D2RO Framework,None (Complete Equation),1,55.4,0,0.03,187,7,0.497,0
+99,w/o V2V Mesh Telemetry,W_mesh = 0,1,50.4,0,0.2,225,10,0.492,0
+99,w/o Corridor Reservation,R_lock constraint lifted,1,50.4,0,0.2,225,10,0.492,0
+99,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,13.62,292,29,0.491,0
+99,w/o S_trolley cost only,"w_S = 0, controller kept",1,150.5,0,3.95,989,57,0.489,0
+99,w/o safety controller only,"controller off, w_S kept",1,53.95,0,0.03,170,98,0.0,0
+99,w/o safety (full stack),S_trolley = 0 and controller off,1,51.9,0,0.02,330,122,0.0,0
+100,Full D2RO Framework,None (Complete Equation),1,43.35,0,0.05,175,11,0.511,0
+100,w/o V2V Mesh Telemetry,W_mesh = 0,1,35.75,0,0.03,147,3,0.514,0
+100,w/o Corridor Reservation,R_lock constraint lifted,1,35.75,0,0.03,147,3,0.514,0
+100,w/o Human Gaussian Proxemics,H_prox = 0,0,180.0,0,11.33,71,40,0.509,0
+100,w/o S_trolley cost only,"w_S = 0, controller kept",1,56.0,0,0.03,388,10,0.511,0
+100,w/o safety controller only,"controller off, w_S kept",1,41.45,0,0.04,232,80,0.0,0
+100,w/o safety (full stack),S_trolley = 0 and controller off,1,50.85,0,0.02,385,129,0.0,0

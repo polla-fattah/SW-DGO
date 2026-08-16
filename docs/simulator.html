@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulator — SW-DGO</title>
+  <meta name="description" content="Interactive browser simulator for D²RO / SW-DGO multi-agent autonomous trolley fleet routing in retail supermarkets, airport concourses, and hospital corridors.">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Pyodide CDN -->
+  <script src="https://cdn.jsdelivr.net/pyodide/v0.26.2/full/pyodide.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-title">
+        <h1>
+          <a href="index.html" style="color:inherit;text-decoration:none" title="Back to the project overview">&#8592; SW-DGO</a> Autonomous Fleet Simulator
+        </h1>
+        <p>Decentralized Route Optimization for Autonomous Trolley Fleets in Dynamic Indoor Facilities</p>
+      </div>
+    </header>
+
+    <!-- Navigation & Scenario Controls -->
+    <section class="tabs-container">
+      <!-- Environment Selection -->
+      <div class="tab-group">
+        <span class="tab-group-label">Environment:</span>
+        <div class="tab-buttons">
+          <button class="tab-btn env-btn active" data-env="supermarket">Supermarket Architecture</button>
+          <button class="tab-btn env-btn" data-env="airport">Airport Concourse</button>
+          <button class="tab-btn env-btn" data-env="hospital">Hospital Corridors</button>
+        </div>
+      </div>
+
+      <!-- Scenario Suite Tabs -->
+      <div class="tab-group">
+        <span class="tab-group-label">Benchmark:</span>
+        <div class="tab-buttons">
+          <button class="tab-btn scen-btn active" data-scen="A">Scenario A: Aisle Crowd</button>
+          <button class="tab-btn scen-btn" data-scen="B">Scenario B: Head-On Lock</button>
+          <button class="tab-btn scen-btn" data-scen="C">Scenario C: Sudden V2V Blockage</button>
+          <button class="tab-btn scen-btn" data-scen="D">Scenario D: Action Alley Crossing</button>
+          <button class="tab-btn scen-btn" data-scen="E">Scenario E: Full Rush Hour</button>
+        </div>
+      </div>
+
+      <!-- Ablation / Algorithm Mode Selection -->
+      <div class="tab-group">
+        <span class="tab-group-label">Algorithm:</span>
+        <div class="tab-buttons">
+          <button class="tab-btn ablation-btn active" data-mode="d2ro">Full D²RO (SW-DGO Comms + Proxemics + Mutex)</button>
+          <button class="tab-btn ablation-btn" data-mode="no_mesh">No V2V Mesh Comms (Local Only)</button>
+          <button class="tab-btn ablation-btn" data-mode="static_a_star" title="Matched-controller baseline: identical vehicle dynamics and safety envelope, socially blind routing on a frozen shortest path. Differs from the proposed method in routing policy only.">Matched Static A* Baseline</button>
+        </div>
+      </div>
+
+      <!-- Scenario Description Banner -->
+      <div id="scenarioDescBanner" class="scenario-desc-banner">
+        Loading scenario specifications...
+      </div>
+    </section>
+
+    <!-- Simulation Viewport -->
+    <main class="viewport-card">
+      <div class="canvas-wrapper">
+        <!-- Loading Overlay -->
+        <div id="loadingOverlay" class="loading-overlay">
+          <div class="spinner"></div>
+          <div id="loadingText" class="loading-text">Starting Python WebAssembly Engine...</div>
+          <div class="loading-subtext">Initializing CPython v0.26 runtime & scientific packages</div>
+        </div>
+
+        <canvas id="simCanvas"></canvas>
+      </div>
+
+      <!-- Toolbar & Controls -->
+      <div class="controls-bar">
+        <div class="btn-group">
+          <button id="playBtn" class="btn btn-primary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5,3 19,12 5,21"/>
+            </svg>
+            Play
+          </button>
+          <button id="stepBtn" class="btn btn-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <polygon points="5,4 15,12 5,20"/>
+              <line x1="19" y1="5" x2="19" y2="19" stroke="currentColor" stroke-width="3"/>
+            </svg>
+            Step Frame
+          </button>
+          <button id="restartBtn" class="btn btn-secondary">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M23 4v6h-6"/>
+              <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/>
+            </svg>
+            Restart
+          </button>
+        </div>
+
+        <div class="slider-group">
+          <label for="speedSlider">Simulation Speed:</label>
+          <input type="range" id="speedSlider" min="0.2" max="3.0" step="0.1" value="1.0">
+          <span id="speedVal">1.0x</span>
+        </div>
+      </div>
+    </main>
+
+    <!-- Telemetry & Metrics Cards -->
+    <section class="telemetry-grid">
+      <div class="telemetry-card">
+        <span class="telemetry-label">Simulation Time</span>
+        <span id="telSimTime" class="telemetry-value">0.0 s</span>
+        <span class="telemetry-sub">Physics dt = 0.05 s</span>
+      </div>
+
+      <div class="telemetry-card">
+        <span class="telemetry-label">Fleet Active Status</span>
+        <span id="telFleetStatus" class="telemetry-value">-- Active</span>
+        <span class="telemetry-sub">Docked vs. Routing</span>
+      </div>
+
+      <div class="telemetry-card">
+        <span class="telemetry-label">Safety Envelope S<sub>trolley</sub></span>
+        <span id="telSafetyEnvelope" class="telemetry-value">1.00 m</span>
+        <span class="telemetry-sub">Kinetic Clearance Radius</span>
+      </div>
+
+      <div class="telemetry-card">
+        <span class="telemetry-label">V2V Mesh Messages</span>
+        <span id="telV2vPackets" class="telemetry-value">0</span>
+        <span class="telemetry-sub">Ad-Hoc Relays Transmitted</span>
+      </div>
+
+      <div class="telemetry-card">
+        <span class="telemetry-label">Human Yielding Events</span>
+        <span id="telHumanYields" class="telemetry-value">0</span>
+        <span class="telemetry-sub">Social Compliance Halts</span>
+      </div>
+
+      <div class="telemetry-card">
+        <span class="telemetry-label">Corridor Locks</span>
+        <span id="telCorridorLocks" class="telemetry-value">0</span>
+        <span class="telemetry-sub">Single-File Mutex Waits</span>
+      </div>
+    </section>
+
+    <!-- Legend Bar -->
+    <section class="legend-bar">
+      <span style="font-weight: 700; color: var(--text-main);">Trolley States:</span>
+      <div class="legend-item"><span class="legend-color" style="background-color: #3b82f6;"></span> Normal Routing</div>
+      <div class="legend-item"><span class="legend-color" style="background-color: #f59e0b;"></span> Yielding to Pedestrian</div>
+      <div class="legend-item"><span class="legend-color" style="background-color: #a855f7;"></span> Waiting Corridor Lock</div>
+      <div class="legend-item"><span class="legend-color" style="background-color: #06b6d4;"></span> Anti-Tailgating Spacing</div>
+      <div class="legend-item"><span class="legend-color" style="background-color: #10b981;"></span> Docked at Bay</div>
+      <div class="legend-item"><span class="legend-color" style="background-color: #f97316;"></span> Human Pedestrian Halo</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>D²RO: Dynamic Decentralized Route Optimization Framework — Autonomous Fleet Routing Research Project</p>
+      <p>Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a> | Powered by <a href="https://pyodide.org/" target="_blank">Pyodide WebAssembly</a></p>
+    </footer>
+  </div>
+
+  <!-- JavaScript Bundles -->
+  <script src="python_bundle.js"></script>
+  <script src="simulator.js"></script>
+</body>
+</html>

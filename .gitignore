@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test / tooling caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Scratch experiment output. The committed datasets under experiments/data/ are
+# tracked deliberately -- they are what makes the reported numbers checkable.
+experiments/data/_*.csv

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SW-DGO — Socially-Weighted Distributed Graph Optimization</title>
+<meta name="description" content="Autonomous service fleets—retail carts, clinical pushchairs, airport trolleys—must route continuously through crowded public space. D²RO / SW-DGO multi-agent navigation research.">
+<link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+<div class="page-container">
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1>Socially-Weighted Distributed Graph Optimization</h1>
+
+    <div class="sub">
+      <p>
+        Autonomous service fleets—retail carts, clinical pushchairs, airport trolleys—must route continuously through crowded public space, where classical planners treat pedestrians as physical obstacles rather than people whose personal space carries a cost. We propose Distributed Dynamic Route Optimization (D²RO), powered by Socially-Weighted Distributed Graph Optimization (SW-DGO): a multi-objective cost field minimised subject to directional corridor reservations and solved via incremental D* Lite graph repair over V2V mesh telemetry.
+      </p>
+      <p>
+        Across 4,650 trials in supermarket, hospital, and airport topologies, proxemic routing eliminates intimate-space exposure (reducing median exposure to 0.00 person-seconds). Controlled experiments establish when distributed coordination is warranted: mesh telemetry and corridor reservations earn their cost under hidden blockages and single-file bottlenecks, advancing rerouting by 11.1 s and raising corridor mission success from 36% to 88%.
+      </p>
+    </div>
+
+    <p class="repo">
+      <a href="https://github.com/polla-fattah/SW-DGO" target="_blank" rel="noopener">github.com/polla-fattah/SW-DGO</a>
+      &nbsp;&mdash;&nbsp; source, datasets and tests
+    </p>
+
+    <p class="meta">
+      Code under <a href="https://github.com/polla-fattah/SW-DGO/blob/main/LICENSE" target="_blank" rel="noopener">MIT</a>,
+      datasets under <a href="https://github.com/polla-fattah/SW-DGO/blob/main/LICENSE-DATA" target="_blank" rel="noopener">CC BY 4.0</a>.
+    </p>
+  </header>
+
+  <hr class="section-divider">
+
+  <!-- Contents / Navigation Cards -->
+  <section>
+    <h2>Contents & Research Assets</h2>
+
+    <div class="resource-grid">
+      <!-- Interactive Simulator Card -->
+      <a href="simulator.html" class="resource-card">
+        <div class="resource-header">
+          <div class="resource-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            Interactive Simulator
+          </div>
+          <span class="resource-arrow">&rarr;</span>
+        </div>
+        <p class="resource-desc">
+          Three environments with live ablation toggles. Runs the actual Python
+          planner compiled to WebAssembly (Pyodide), not a re-implementation.
+        </p>
+      </a>
+
+      <!-- Python Package Card -->
+      <a href="https://github.com/polla-fattah/SW-DGO/tree/main/d2ro" class="resource-card" target="_blank" rel="noopener">
+        <div class="resource-header">
+          <div class="resource-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="16 18 22 12 16 6"></polyline>
+              <polyline points="8 6 2 12 8 18"></polyline>
+            </svg>
+            Python package (<code>d2ro/</code>)
+          </div>
+          <span class="resource-arrow">&rarr;</span>
+        </div>
+        <p class="resource-desc">
+          D* Lite replanner, directed cost graph, proxemics field, V2V mesh,
+          reservation protocol, four baselines, three environments.
+        </p>
+      </a>
+
+      <!-- Experiment Data Card -->
+      <a href="https://github.com/polla-fattah/SW-DGO/tree/main/experiments/data" class="resource-card" target="_blank" rel="noopener">
+        <div class="resource-header">
+          <div class="resource-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+            Experiment data
+          </div>
+          <span class="resource-arrow">&rarr;</span>
+        </div>
+        <p class="resource-desc">
+          Raw CSVs from 4,650 trials across eleven experiments. Each file carries a
+          fingerprint of the code that produced it.
+        </p>
+      </a>
+
+      <!-- Analysis Pipeline Card -->
+      <a href="https://github.com/polla-fattah/SW-DGO/tree/main/analysis/scripts" class="resource-card" target="_blank" rel="noopener">
+        <div class="resource-header">
+          <div class="resource-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="20" x2="18" y2="10"></line>
+              <line x1="12" y1="20" x2="12" y2="4"></line>
+              <line x1="6" y1="20" x2="6" y2="14"></line>
+            </svg>
+            Analysis pipeline
+          </div>
+          <span class="resource-arrow">&rarr;</span>
+        </div>
+        <p class="resource-desc">
+          Turns the raw CSVs into every reported statistic. Refuses to report data
+          whose source code has since changed.
+        </p>
+      </a>
+
+      <!-- Test Suite Card -->
+      <a href="https://github.com/polla-fattah/SW-DGO/tree/main/d2ro/tests" class="resource-card" target="_blank" rel="noopener">
+        <div class="resource-header">
+          <div class="resource-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+            Test suite
+          </div>
+          <span class="resource-arrow">&rarr;</span>
+        </div>
+        <p class="resource-desc">
+          67 tests: replanner optimality against Dijkstra, heuristic admissibility,
+          kinematics, metric semantics, provenance.
+        </p>
+      </a>
+
+      <!-- README Card -->
+      <a href="https://github.com/polla-fattah/SW-DGO#readme" class="resource-card" target="_blank" rel="noopener">
+        <div class="resource-header">
+          <div class="resource-title">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <line x1="16" y1="13" x2="8" y2="13"></line>
+              <line x1="16" y1="17" x2="8" y2="17"></line>
+              <polyline points="10 9 9 9 8 9"></polyline>
+            </svg>
+            README & Documentation
+          </div>
+          <span class="resource-arrow">&rarr;</span>
+        </div>
+        <p class="resource-desc">
+          Repository layout, reproduction commands, limitations, future work.
+        </p>
+      </a>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Problem Section -->
+  <section>
+    <h2>Problem Context</h2>
+    <div class="content-box">
+      <p>
+        Classical planners fail here in two specific ways. A shortest-path planner drives
+        through a browsing shopper's personal space because nothing in its objective says
+        not to, and reactive avoidance only engages once someone is already close — by
+        which point the intrusion has happened. Separately, two carts entering one
+        single-file aisle from opposite ends is not a collision-avoidance problem but a
+        coordination problem, and a purely local controller can only oscillate.
+      </p>
+    </div>
+  </section>
+
+  <!-- Results Section -->
+  <section>
+    <h2>Experimental Results</h2>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Planner</th>
+            <th>Success</th>
+            <th>Makespan (s)</th>
+            <th>Exposure (person-s, median)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-row">
+            <td>
+              <strong>SW-DGO</strong>
+              <span class="badge-proposed">Proposed</span>
+            </td>
+            <td><strong>99.0%</strong></td>
+            <td>47.18 ± 13.40</td>
+            <td><strong>0.00</strong></td>
+          </tr>
+          <tr>
+            <td>Local Social D* Lite</td>
+            <td>100.0%</td>
+            <td>39.06 ± 15.12</td>
+            <td>0.00</td>
+          </tr>
+          <tr>
+            <td>Static A* (matched controller)</td>
+            <td>100.0%</td>
+            <td>19.20</td>
+            <td>6.40</td>
+          </tr>
+          <tr>
+            <td>Static A*</td>
+            <td>100.0%</td>
+            <td>18.00</td>
+            <td>6.40</td>
+          </tr>
+          <tr>
+            <td>Artificial potential fields</td>
+            <td>100.0%</td>
+            <td>34.54</td>
+            <td>10.18</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-box">
+      <p>
+        <strong>The table above is the broad randomized benchmark, and the proposed
+        system does not win it.</strong> Local Social D* Lite &mdash; the same proxemic
+        routing with no mesh and no reservation &mdash; matches its social compliance
+        exactly and finishes about 8&nbsp;s sooner. That 8&nbsp;s is the overhead of a
+        distributed layer whose target topologies a randomized supermarket run rarely
+        produces.
+      </p>
+      <p>
+        The two experiments below construct those topologies deliberately. Both are
+        <em>N</em>&nbsp;=&nbsp;50 seed-paired trials with the mechanism the only thing
+        switched.
+      </p>
+    </div>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Controlled mechanism experiment</th>
+            <th>Mechanism ON</th>
+            <th>OFF</th>
+            <th>p</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="highlight-row">
+            <td>
+              <strong>Anticipation lead time</strong> (s)
+              <span class="badge-proposed">V2V mesh</span>
+            </td>
+            <td><strong>10.70 &plusmn; 4.20</strong></td>
+            <td>&minus;0.10 &plusmn; 0.04</td>
+            <td>3.8 &times; 10<sup>&minus;9</sup></td>
+          </tr>
+          <tr>
+            <td>Backtracking distance (m)</td>
+            <td>1.08 &plusmn; 0.68</td>
+            <td>2.73 &plusmn; 0.87</td>
+            <td>3.2 &times; 10<sup>&minus;8</sup></td>
+          </tr>
+          <tr class="highlight-row">
+            <td>
+              <strong>Corridor mission success</strong>
+              <span class="badge-proposed">Reservation</span>
+            </td>
+            <td><strong>88.0%</strong></td>
+            <td>36.0%</td>
+            <td>1.7 &times; 10<sup>&minus;4</sup></td>
+          </tr>
+          <tr>
+            <td>Off-corridor vertices (diversion)</td>
+            <td>2.16 &plusmn; 1.36</td>
+            <td>0.00</td>
+            <td>2.3 &times; 10<sup>&minus;8</sup></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="content-box">
+      <p>
+        Read together, the two tables give the actual finding, which is conditional
+        rather than promotional: <strong>the distributed layer is not a general
+        improvement but a targeted one.</strong> A deployment whose topology routinely
+        produces blockages beyond sensing range, or single-file corridors entered from
+        both ends, should pay for the radio. One that does not should run the local
+        planner &mdash; simpler, faster, and equally well behaved around people.
+      </p>
+      <p>
+        The reservation also turns out not to work the way its name suggests. Head-on
+        encounters are statistically unchanged and total waiting is 0.03&nbsp;s: agents
+        do not queue for the corridor, they leave it. We therefore describe it as
+        cost-projected diversion rather than mutual exclusion.
+      </p>
+    </div>
+
+    <div class="content-box">
+      <p>
+        A 2&times;2 factorial with the mesh and reservation disabled in every cell isolates
+        the proxemic cost term: enabling it alone reduces exposure by 6.40 person-seconds
+        (95% CI [&minus;6.48, &minus;6.31], <i>p</i> = 1.5 &times; 10<sup>&minus;9</sup>),
+        at a cost of 19.03 s of travel time. Reactive yielding adds no statistically
+        detectable reduction on top of it (<i>p</i> = 0.59).
+      </p>
+
+      <p>
+        The distributed layer is conditional. An ordinary human-aware planner with no mesh
+        and no reservation matches that social compliance exactly (<i>p</i> = 1) while
+        finishing about 8 s sooner. The mesh and reservation earn their cost only under the
+        topologies they were designed for — a blockage outside a follower's sensing range,
+        and a single-file corridor entered from both ends.
+      </p>
+    </div>
+  </section>
+
+  <!-- Limitations Section -->
+  <section>
+    <h2>Limitations & Scoping</h2>
+    <div class="content-box">
+      <ul class="styled-list">
+        <li>Simulated pedestrians do not react to the robots; reported exposure is an upper bound on a real crowd.</li>
+        <li>Weights are hand-selected. The sensitivity sweep shows a plateau but claims no optimality, and is one-at-a-time.</li>
+        <li>Sensing is range-limited, without ray-casting against shelf occlusion.</li>
+        <li>Fleet scaling is bounded: success falls to 78% at twelve carts in 36 &times; 24 m.</li>
+        <li>ORCA and local MAPF are our own implementations and complete 0% of missions; no conclusion depends on them.</li>
+        <li>All results are simulation. No physical fleet was deployed.</li>
+        <li>We report when the distributed layer helps, not how often those conditions arise.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Future Work Section -->
+  <section>
+    <h2>Future Research Directions</h2>
+    <div class="content-box">
+      <ul class="styled-list">
+        <li><strong>Joint Weight Calibration:</strong> Multi-objective Pareto optimization over travel makespan and social exposure, or automated weight selection replacing one-at-a-time sensitivity sweeps.</li>
+        <li><strong>Mesh Traffic Suppression:</strong> Spatial scoping and relevance filtering of V2V broadcasts to scale beyond the 12-cart fleet density ceiling.</li>
+        <li><strong>Heading-Augmented Search:</strong> Incorporating turn penalties (&alpha;<sub>turn</sub>) directly into graph search over an orientation-augmented state space rather than relying solely on motion-layer kinodynamics (&omega;<sub>max</sub> = 2.5 rad/s).</li>
+        <li><strong>Hybrid Learning-Guided Search:</strong> Coupling Graph Neural Networks or deep RL (e.g., PRIMAL / Learn to Follow) for global goal allocation with the deterministic D* Lite engine.</li>
+        <li><strong>Heterogeneous Multi-Agent Ecosystems:</strong> Extending SW-DGO to mixed fleets (shopping carts, clinical pushchairs, floor scrubbers, wheelchairs) via vehicle-specific agility weights in directional corridor reservations.</li>
+        <li><strong>Physical Deployment &amp; Localization:</strong> Validating RF attenuation in real metal-gondola retail environments and fusing UWB / IMU / wheel odometry through EKF localization.</li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="section-divider">
+
+  <!-- Colophon / Publication Details -->
+  <div class="colophon-card">
+    <div class="colophon-text">
+      <strong>Publication Status:</strong> A manuscript describing this work is under peer review. Citation details will be added on acceptance.
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      SW-DGO Research &copy; Dr. Polla Abdulhamid Fattah & Sub-authors
+    </div>
+    <div>
+      <a href="https://github.com/polla-fattah/SW-DGO" target="_blank" rel="noopener">GitHub Repository</a>
+      &bull;
+      <a href="simulator.html">Interactive Simulator</a>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>
